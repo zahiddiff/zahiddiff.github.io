@@ -52,6 +52,24 @@ For `image`, drop the file in `assets/` and point at it.
 Everything in the hero, About, Toolkit and Contact sections comes from **`data/profile.json`**.
 Change the text there and commit — no HTML to touch.
 
+**The one-click way:** open
+[`data/profile.json` on GitHub](https://github.com/raykondiff/raykondiff.github.io/edit/main/data/profile.json),
+click the pencil, edit, hit **Commit changes**. Live in about a minute.
+
+### Things that change most often
+
+| What | Field | Notes |
+|---|---|---|
+| **Where you live** | `location` | The line under the nav. This is the **only** place the city appears on the whole site — change it here and you're done. |
+| Your one-liner | `tagline` | Under your name. |
+| Status | `available` | The green line at the bottom of the hero. Set it to `""` to hide it entirely. |
+| Bio | `intro` | A list — each string becomes a paragraph. |
+| Education / history | `background` | A list of `{period, title, detail}` entries, newest first. |
+| Skills | `skills` | A list of `{group, items}`. Add or remove groups freely — the row re-flows to stay full. |
+| Social links | `links` | `icon` can be `github`, `linkedin`, or `link` for anything else. |
+
+**If you move cities:** change `location`, commit. That's the whole job.
+
 ---
 
 ## Files

@@ -1,10 +1,14 @@
 {
-  "_comment": "EDIT ME. Everything on the site's profile comes from this file. Change a value, commit, done.",
+  "_comment": "EDIT ME. Everything on the site's profile comes from this file. Change a value, commit, done — no HTML to touch.",
+
+  "_moved_city": "If you move, change 'location' below and nothing else. It is the ONLY place the city appears on the whole site; the line under the nav reads straight from it.",
 
   "name": "Md Zahidul Haque",
   "handle": "raykondiff",
   "tagline": "AI & Computer Engineering student. I build things that run a real business.",
+
   "location": "Busan, South Korea",
+
   "available": "Open to internships and interesting builds",
 
   "intro": [
