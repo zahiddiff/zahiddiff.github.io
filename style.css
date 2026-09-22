@@ -384,11 +384,12 @@ body > *:not(.fx-grid):not(.fx-scan):not(.fx-vignette) { position: relative; z-i
 .skill-card:hover::after, .card:hover::after, .repo:hover::after { opacity: 1; }
 
 /* ═══════════ SKILLS ═══════════ */
-.skills-grid { display: grid; gap: 16px; margin-top: 30px; grid-template-columns: 1fr; }
-@media (min-width: 640px)  { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1000px) { .skills-grid { grid-template-columns: repeat(4, 1fr); } }
-
-.skill-card { padding: 22px; }
+/* Flex, not grid: the number of groups comes from profile.json, so
+   the last row must fill the width whatever that number turns out
+   to be. A grid would strand a lone card in an empty 4-wide row. */
+.skills-grid { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 30px; }
+.skill-card { flex: 1 1 100%; padding: 22px; }
+@media (min-width: 640px) { .skill-card { flex-basis: 280px; } }
 .skill-card h3 {
   font-family: var(--mono); font-size: 11.5px; font-weight: 700;
   letter-spacing: .14em; text-transform: uppercase;
