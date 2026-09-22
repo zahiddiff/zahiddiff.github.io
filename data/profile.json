@@ -1,0 +1,50 @@
+{
+  "_comment": "EDIT ME. Everything on the site's profile comes from this file. Change a value, commit, done.",
+
+  "name": "Zahidul Haque",
+  "handle": "raykondiff",
+  "tagline": "I build things that run a real business.",
+  "location": "Dhaka, Bangladesh",
+  "available": "Open to collaborating on interesting builds",
+
+  "intro": [
+    "I'm a self-taught builder from Bangladesh. I don't just write code for the sake of it — I build the software that keeps an actual business running, then I run the business on it.",
+    "Most of what I make starts as a problem I personally had: a store that needed a catalogue of 600+ products, 100 posters that needed to post themselves, a desktop app to run the whole operation from one window. I figure out the stack as I go and ship the thing."
+  ],
+
+  "background": [
+    {
+      "period": "Now",
+      "title": "Founder & builder — Lumsoo",
+      "detail": "Running a luxury Korean beauty store end to end: the storefront, the custom theme, the product pipeline, the social automation and the internal tooling. Every part of it is something I built."
+    },
+    {
+      "period": "Along the way",
+      "title": "Full-stack, by necessity",
+      "detail": "Taught myself WordPress and WooCommerce theming in PHP, data pipelines in PowerShell and Node, desktop apps in Electron and React, and API integrations against Meta's Graph API — because each one was the next thing standing between me and shipping."
+    },
+    {
+      "period": "How I work",
+      "title": "Ship first, polish after",
+      "detail": "I prefer a working version in front of me over a perfect plan on paper. I scope hard, cut what the data doesn't justify yet, and come back to it when it earns its place."
+    }
+  ],
+
+  "skills": [
+    { "group": "Web & commerce", "items": ["WordPress", "WooCommerce", "PHP", "Custom themes", "HTML / CSS", "JavaScript"] },
+    { "group": "Apps & tooling", "items": ["Electron", "React", "TypeScript", "Node.js", "SQLite", "PowerShell"] },
+    { "group": "Automation & APIs", "items": ["Meta Graph API", "REST APIs", "Scheduling / cron", "Data pipelines", "Web scraping"] },
+    { "group": "Design", "items": ["Brand identity", "Poster & social design", "SVG / logo work", "Typography"] }
+  ],
+
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/raykondiff", "icon": "github" }
+  ],
+
+  "github": {
+    "user": "raykondiff",
+    "showRepos": true,
+    "hideRepos": ["raykondiff.github.io", "desktop-tutorial"],
+    "maxRepos": 30
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zahidul Haque — Builder</title>
+<meta name="description" content="Zahidul Haque (raykondiff) — self-taught builder from Bangladesh. Things I've made: e-commerce, automation, desktop apps.">
+<meta property="og:title" content="Zahidul Haque — Builder">
+<meta property="og:description" content="Self-taught builder from Bangladesh. Things I've made.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="nav-brand" href="#top"><span class="dot"></span> raykondiff</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills">Toolkit</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" type="button" aria-label="Switch colour theme" title="Switch theme">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g class="rays"><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/></g></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ─────────── HERO ─────────── -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="eyebrow" id="p-location">—</p>
+      <h1 class="hero-name" id="p-name">—</h1>
+      <p class="hero-tag" id="p-tagline">—</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">See what I've built <span aria-hidden="true">→</span></a>
+        <div class="hero-links" id="p-links"></div>
+      </div>
+      <p class="hero-status" id="p-available"></p>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+  </section>
+
+  <!-- ─────────── ABOUT ─────────── -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <h2 class="sec-h"><span class="sec-n">01</span> About</h2>
+      <div class="about-grid">
+        <div class="about-intro" id="p-intro"></div>
+        <ol class="timeline" id="p-background"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── SKILLS ─────────── -->
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <h2 class="sec-h"><span class="sec-n">02</span> Toolkit</h2>
+      <div class="skills-grid" id="p-skills"></div>
+    </div>
+  </section>
+
+  <!-- ─────────── WORK ─────────── -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <h2 class="sec-h"><span class="sec-n">03</span> Work</h2>
+      <p class="sec-lede">Selected things I've made. The repo list below updates itself — anything new I push to GitHub shows up here on its own.</p>
+      <div class="cards" id="p-projects"></div>
+    </div>
+  </section>
+
+  <!-- ─────────── REPOS ─────────── -->
+  <section class="section alt" id="repos-section" hidden>
+    <div class="wrap">
+      <h2 class="sec-h"><span class="sec-n">04</span> From GitHub</h2>
+      <p class="sec-lede">Pulled live from <a id="gh-profile-link" href="https://github.com/raykondiff" target="_blank" rel="noopener noreferrer">my GitHub</a>, newest first.</p>
+      <div class="repos" id="p-repos" aria-live="polite"><p class="muted">Loading repositories…</p></div>
+    </div>
+  </section>
+
+  <!-- ─────────── CONTACT ─────────── -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <h2 class="sec-h"><span class="sec-n">05</span> Contact</h2>
+      <p class="contact-lede">The best place to find me and everything I'm working on:</p>
+      <div class="contact-links" id="p-contact"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span id="f-name">—</span>
+    <span class="muted">Built by hand · hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

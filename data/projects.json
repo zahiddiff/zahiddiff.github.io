@@ -1,0 +1,41 @@
+{
+  "_howto": "ADD A PROJECT: copy one block below, change the values, commit. Only 'title' is required. Set featured:true to pin it to the top. Delete the examples you don't want. GitHub repos show up automatically further down the page - you do NOT need to list them here.",
+
+  "_template": {
+    "title": "Project name",
+    "blurb": "One or two sentences on what it is and what it does.",
+    "year": "2026",
+    "tags": ["Tag", "Another tag"],
+    "url": "https://example.com",
+    "urlLabel": "Visit site",
+    "repo": "https://github.com/raykondiff/something",
+    "image": "assets/my-screenshot.png",
+    "featured": true
+  },
+
+  "projects": [
+    {
+      "title": "Lumsoo",
+      "blurb": "A luxury Korean beauty store built from nothing: a custom WooCommerce theme, a 600+ product catalogue pulled and rebuilt from a supplier API, a brand directory, and editorial category art. Live and selling in Bangladesh.",
+      "year": "2026",
+      "tags": ["WordPress", "WooCommerce", "PHP", "Custom theme", "E-commerce"],
+      "url": "https://lumsoo.com",
+      "urlLabel": "Visit lumsoo.com",
+      "featured": true
+    },
+    {
+      "title": "Lumsoo Auto-Poster",
+      "blurb": "A WordPress plugin that schedules and publishes 100+ product posters to Facebook and Instagram on its own. Facebook uses native Graph API scheduling; Instagram has no scheduling API, so a cron worker publishes each post at its exact slot.",
+      "year": "2026",
+      "tags": ["PHP", "Meta Graph API", "Automation", "WP-Cron"],
+      "featured": true
+    },
+    {
+      "title": "Utopia",
+      "blurb": "A desktop control panel for running the whole store from one window — orders, stock and supplier steps in a single Electron app. Deliberately scoped down to what the data actually justified instead of the enterprise version I first sketched.",
+      "year": "2026",
+      "tags": ["Electron", "React", "TypeScript", "SQLite"],
+      "featured": false
+    }
+  ]
+}
