@@ -60,14 +60,20 @@ function initTheme() {
 /* ------------------- PROFILE ------------------- */
 function renderProfile(p) {
   document.title = p.name + ' — ' + (p.tagline || 'Portfolio');
-  $('#p-name').textContent     = p.name || '';
+
+  const nameEl = $('#p-name');
+  nameEl.textContent = p.name || '';
+  /* the glitch layers are ::before/::after rendering attr(data-text) */
+  nameEl.setAttribute('data-text', p.name || '');
+
   $('#p-tagline').textContent  = p.tagline || '';
   $('#p-location').textContent = p.location || '';
   $('#p-available').textContent = p.available || '';
   $('#f-name').textContent     = '© ' + new Date().getFullYear() + ' ' + (p.name || '');
   if (p.handle) {
-    document.querySelectorAll('.nav-brand').forEach(el => {
-      el.innerHTML = '<span class="dot"></span> ' + esc(p.handle);
+    /* only swap the text node - the glyph and caret are markup */
+    document.querySelectorAll('.brand-text').forEach(el => {
+      el.textContent = p.handle;
     });
   }
 
@@ -186,6 +192,23 @@ async function renderRepos(cfg) {
   observeReveals();
 }
 
+/* ------------------- OCCASIONAL GLITCH -------------------
+   A short stutter every so often, not a permanently moving
+   headline. Off entirely when reduced motion is requested. */
+function scheduleGlitch() {
+  const el = $('#p-name');
+  const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!el || (reduced && reduced.matches)) return;
+
+  const tick = () => {
+    if (document.hidden) { setTimeout(tick, 4000); return; }
+    el.classList.add('pulse');
+    setTimeout(() => el.classList.remove('pulse'), 700);
+    setTimeout(tick, 5000 + Math.random() * 7000);
+  };
+  setTimeout(tick, 2500);
+}
+
 /* ------------------- SCROLL REVEAL ------------------- */
 let revealObserver;
 function observeReveals() {
@@ -226,5 +249,6 @@ function observeReveals() {
   }
 
   observeReveals();
+  scheduleGlitch();
   renderRepos(profile.github);
 })();
