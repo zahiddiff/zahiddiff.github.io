@@ -206,6 +206,22 @@ body > *:not(.fx-grid):not(.fx-scan):not(.fx-vignette) { position: relative; z-i
   filter: blur(26px);
 }
 
+/* avatar sits under the text on phones, beside it from tablet up */
+.hero-in { display: flex; flex-direction: column-reverse; align-items: flex-start; gap: 30px; }
+@media (min-width: 900px) {
+  .hero-in { flex-direction: row; align-items: center; justify-content: space-between; gap: 52px; }
+}
+.hero-text { min-width: 0; }
+
+.hero-avatar {
+  flex: none; width: 150px; height: 150px; border-radius: 50%;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 7%, transparent),
+              0 22px 50px -22px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+@media (min-width: 900px)  { .hero-avatar { width: 260px; height: 260px; } }
+@media (min-width: 1100px) { .hero-avatar { width: 310px; height: 310px; } }
+
 .eyebrow {
   font-family: var(--mono); font-size: 12px; letter-spacing: .18em;
   text-transform: uppercase; color: var(--accent); margin: 0 0 22px;
