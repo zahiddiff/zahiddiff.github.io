@@ -1,5 +1,5 @@
 /* ==================================================
-   raykondiff.github.io
+   zahiddiff.github.io
    Reads data/profile.json + data/projects.json and
    pulls public repos straight from the GitHub API,
    so a new repo shows up here with no edits at all.
@@ -251,7 +251,7 @@ function observeReveals() {
     renderProfile(profile);
   } catch (err) {
     console.error('profile.json failed to load', err);
-    $('#p-name').textContent = 'raykondiff';
+    $('#p-name').textContent = 'zahiddiff';
     $('#p-tagline').textContent = 'Could not load data/profile.json.';
   }
 

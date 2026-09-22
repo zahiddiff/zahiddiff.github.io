@@ -164,7 +164,7 @@ def svg(named):
         fill="#e9eef7">MD ZAHIDUL HAQUE</text>
   <text x="256" y="484" text-anchor="middle"
         font-family="Consolas, Menlo, monospace"
-        font-size="20" letter-spacing="5" fill="{CYAN}">raykondiff</text>"""
+        font-size="20" letter-spacing="5" fill="{CYAN}">zahiddiff</text>"""
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 {H}" width="512" height="{H}">
 {DEFS}

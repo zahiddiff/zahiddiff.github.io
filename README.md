@@ -1,6 +1,6 @@
-# raykondiff.github.io
+# zahiddiff.github.io
 
-My personal site — live at **https://raykondiff.github.io**
+My personal site — live at **https://zahiddiff.github.io**
 
 ---
 
@@ -10,7 +10,7 @@ There are two ways, and you'll mostly use the first one.
 
 ### 1. A GitHub repo — nothing to do
 
-Any **public** repo on `github.com/raykondiff` shows up in the **From GitHub** section
+Any **public** repo on `github.com/zahiddiff` shows up in the **From GitHub** section
 automatically, newest first. Push a new repo and it appears on the site. No edits, no deploy.
 
 To make a repo look good there, give it a **description** on GitHub (the box at the top right
@@ -24,7 +24,7 @@ For a live site, a client project, a design job, anything without public code:
 edit **`data/projects.json`** and add one block to the `projects` list.
 
 **The one-click way:** open
-[`data/projects.json` on GitHub](https://github.com/raykondiff/raykondiff.github.io/edit/main/data/projects.json),
+[`data/projects.json` on GitHub](https://github.com/zahiddiff/zahiddiff.github.io/edit/main/data/projects.json),
 click the pencil, paste a new block, hit **Commit changes**. The site updates in about a minute.
 
 ```json
@@ -35,7 +35,7 @@ click the pencil, paste a new block, hit **Commit changes**. The site updates in
   "tags": ["WordPress", "PHP"],
   "url": "https://example.com",
   "urlLabel": "Visit site",
-  "repo": "https://github.com/raykondiff/something",
+  "repo": "https://github.com/zahiddiff/something",
   "image": "assets/screenshot.png",
   "featured": true
 }
@@ -53,7 +53,7 @@ Everything in the hero, About, Toolkit and Contact sections comes from **`data/p
 Change the text there and commit — no HTML to touch.
 
 **The one-click way:** open
-[`data/profile.json` on GitHub](https://github.com/raykondiff/raykondiff.github.io/edit/main/data/profile.json),
+[`data/profile.json` on GitHub](https://github.com/zahiddiff/zahiddiff.github.io/edit/main/data/profile.json),
 click the pencil, edit, hit **Commit changes**. Live in about a minute.
 
 ### Things that change most often
@@ -98,6 +98,6 @@ Then open http://localhost:4173
 
 ## Publishing
 
-The repo is named `raykondiff.github.io`, so GitHub Pages serves it at the root domain.
+The repo is named `zahiddiff.github.io`, so GitHub Pages serves it at the root domain.
 Settings → Pages → Source = **Deploy from a branch**, branch `main`, folder `/ (root)`.
 Every push to `main` republishes automatically.
