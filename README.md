@@ -60,6 +60,7 @@ click the pencil, edit, hit **Commit changes**. Live in about a minute.
 
 | What | Field | Notes |
 |---|---|---|
+| **Profile picture** | `avatar` | Drop your image in `assets/`, then put its filename here, e.g. `assets/me.png`. Any format (png/jpg/svg/webp), or a full URL. Square works best — it renders as a circle. |
 | **Where you live** | `location` | The line under the nav. This is the **only** place the city appears on the whole site — change it here and you're done. |
 | Your one-liner | `tagline` | Under your name. |
 | Status | `available` | The green line at the bottom of the hero. Set it to `""` to hide it entirely. |

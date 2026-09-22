@@ -78,6 +78,16 @@ function renderProfile(p) {
     });
   }
 
+  /* profile picture - any file in assets/, or a full URL */
+  const avatarEl = document.querySelector('.hero-avatar');
+  if (avatarEl && p.avatar) {
+    const src = safeUrl(p.avatar);
+    if (src) {
+      avatarEl.src = src;
+      avatarEl.alt = p.name ? 'Portrait of ' + p.name : '';
+    }
+  }
+
   $('#p-intro').innerHTML = (p.intro || []).map(t => '<p>' + esc(t) + '</p>').join('');
 
   $('#p-background').innerHTML = (p.background || []).map(b =>

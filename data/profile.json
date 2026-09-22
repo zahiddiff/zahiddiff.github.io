@@ -3,6 +3,9 @@
 
   "_moved_city": "If you move, change 'location' below and nothing else. It is the ONLY place the city appears on the whole site; the line under the nav reads straight from it.",
 
+  "_change_picture": "To change the profile picture: drop your image in the assets/ folder, then put its filename below, e.g. 'assets/me.png'. Any format works (png, jpg, svg, webp). A full https:// URL works too. Square images look best - it is displayed as a circle.",
+  "avatar": "assets/avatar.svg",
+
   "name": "Md Zahidul Haque",
   "handle": "zahiddiff",
   "tagline": "AI & Computer Engineering student. I build things that run a real business.",
