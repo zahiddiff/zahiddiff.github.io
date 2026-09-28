@@ -1,24 +1,14 @@
 {
-  "_comment": "EDIT ME. Everything on the site's profile comes from this file. Change a value, commit, done — no HTML to touch.",
-
-  "_moved_city": "If you move, change 'location' below and nothing else. It is the ONLY place the city appears on the whole site; the line under the nav reads straight from it.",
-
-  "_change_picture": "To change the profile picture: drop your image in the assets/ folder, then put its filename below, e.g. 'assets/me.png'. Any format works (png, jpg, svg, webp). A full https:// URL works too. Square images look best - it is displayed as a circle.",
   "avatar": "assets/IjiNa_00_2-778x438.jpg",
-
   "name": "Md Zahidul Haque",
   "handle": "zahiddiff",
   "tagline": "AI & Computer Engineering student. I build things that run a real business.",
-
   "location": "Busan, South Korea",
-
   "available": "Open to internships and interesting builds",
-
   "intro": [
     "I'm an AI and Computer Engineering student at Tongmyong University, and a self-taught builder. I don't just write code for the sake of it — I build the software that keeps an actual business running, then I run the business on it.",
     "Most of what I make starts as a problem I personally had: a store that needed a catalogue of 600+ products, 100 posters that needed to post themselves, a desktop app to run the whole operation from one window. I figure out the stack as I go and ship the thing."
   ],
-
   "background": [
     {
       "period": "Now",
@@ -41,24 +31,76 @@
       "detail": "I prefer a working version in front of me over a perfect plan on paper. I scope hard, cut what the data doesn't justify yet, and come back to it when it earns its place."
     }
   ],
-
   "skills": [
-    { "group": "Studying now", "items": ["Artificial intelligence", "Machine learning", "Computer engineering"] },
-    { "group": "Web & commerce", "items": ["WordPress", "WooCommerce", "PHP", "Custom themes", "HTML / CSS", "JavaScript"] },
-    { "group": "Apps & tooling", "items": ["Electron", "React", "TypeScript", "Node.js", "SQLite", "PowerShell"] },
-    { "group": "Automation & APIs", "items": ["Meta Graph API", "REST APIs", "Scheduling / cron", "Data pipelines", "Web scraping"] },
-    { "group": "Design", "items": ["Brand identity", "Poster & social design", "SVG / logo work", "Typography"] }
+    {
+      "group": "Studying now",
+      "items": [
+        "Artificial intelligence",
+        "Machine learning",
+        "Computer engineering"
+      ]
+    },
+    {
+      "group": "Web & commerce",
+      "items": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "Custom themes",
+        "HTML / CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "group": "Apps & tooling",
+      "items": [
+        "Electron",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "SQLite",
+        "PowerShell"
+      ]
+    },
+    {
+      "group": "Automation & APIs",
+      "items": [
+        "Meta Graph API",
+        "REST APIs",
+        "Scheduling / cron",
+        "Data pipelines",
+        "Web scraping"
+      ]
+    },
+    {
+      "group": "Design",
+      "items": [
+        "Brand identity",
+        "Poster & social design",
+        "SVG / logo work",
+        "Typography"
+      ]
+    }
   ],
-
   "links": [
-    { "label": "GitHub", "url": "https://github.com/zahiddiff", "icon": "github" },
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/haquemdzahidul/", "icon": "linkedin" }
+    {
+      "label": "GitHub",
+      "url": "https://github.com/zahiddiff",
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/haquemdzahidul/",
+      "icon": "linkedin"
+    }
   ],
-
   "github": {
     "user": "zahiddiff",
     "showRepos": true,
-    "hideRepos": ["zahiddiff.github.io", "desktop-tutorial"],
+    "hideRepos": [
+      "zahiddiff.github.io",
+      "desktop-tutorial"
+    ],
     "maxRepos": 30
   }
 }

@@ -1,7 +1,4 @@
-/* ==================================================
-   zahiddiff.github.io - cyberpunk build
-   Colours live in the two :root blocks below.
-   ================================================== */
+/* Theme tokens live in the two :root blocks. */
 
 :root {
   /* surfaces */
@@ -12,7 +9,7 @@
   --line:      #1c2438;
   --line-soft: #141a29;
 
-  /* text - all checked >= 4.5:1 against --bg */
+  /* text */
   --text:      #e2ecf7;
   --text-dim:  #a7b8cd;
   --muted:     #8b9db5;
@@ -96,9 +93,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .muted { color: var(--muted); }
 
-/* ═══════════ DECORATIVE LAYERS ═══════════
-   Pure atmosphere. Kept low-contrast so they never
-   interfere with text legibility, and pointer-inert. */
+/* ═══════════ DECORATIVE LAYERS ═══════════ */
 
 .fx-grid, .fx-scan, .fx-vignette {
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
@@ -206,7 +201,7 @@ body > *:not(.fx-grid):not(.fx-scan):not(.fx-vignette) { position: relative; z-i
   filter: blur(26px);
 }
 
-/* avatar sits under the text on phones, beside it from tablet up */
+/* avatar: stacked on phones, beside text from 900px */
 .hero-in { display: flex; flex-direction: column-reverse; align-items: flex-start; gap: 30px; }
 @media (min-width: 900px) {
   .hero-in { flex-direction: row; align-items: center; justify-content: space-between; gap: 52px; }
@@ -238,7 +233,7 @@ body > *:not(.fx-grid):not(.fx-scan):not(.fx-vignette) { position: relative; z-i
   text-shadow: 0 0 22px color-mix(in srgb, var(--accent) 28%, transparent);
   word-break: break-word;
 }
-/* the glow reads as a smudge on a light background, not as neon */
+/* no glow in light mode */
 :root[data-theme="light"] .hero-name { text-shadow: none; }
 :root[data-theme="light"] .sec-n { text-shadow: none; }
 .glitch::before, .glitch::after {
@@ -400,9 +395,7 @@ body > *:not(.fx-grid):not(.fx-scan):not(.fx-vignette) { position: relative; z-i
 .skill-card:hover::after, .card:hover::after, .repo:hover::after { opacity: 1; }
 
 /* ═══════════ SKILLS ═══════════ */
-/* Flex, not grid: the number of groups comes from profile.json, so
-   the last row must fill the width whatever that number turns out
-   to be. A grid would strand a lone card in an empty 4-wide row. */
+/* flex so the last row always fills the width */
 .skills-grid { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 30px; }
 .skill-card { flex: 1 1 100%; padding: 22px; }
 @media (min-width: 640px) { .skill-card { flex-basis: 280px; } }
@@ -520,9 +513,7 @@ body > *:not(.fx-grid):not(.fx-scan):not(.fx-vignette) { position: relative; z-i
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .45s ease-out, transform .45s ease-out; }
 .reveal.in { opacity: 1; transform: none; }
 
-/* ═══════════ REDUCED MOTION ═══════════
-   Everything above that moves is switched off here.
-   The page must read identically without the motion. */
+/* ═══════════ REDUCED MOTION ═══════════ */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
