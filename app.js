@@ -124,11 +124,14 @@ function renderProjects(list) {
   host.innerHTML = ordered.map(pr => {
     const site = safeUrl(pr.url);
     const repo = safeUrl(pr.repo);
+    const about = safeUrl(pr.about);
     const img  = pr.image ? safeUrl(pr.image) : null;
 
     const actions = [
       site ? '<a class="card-link" href="' + esc(site) + '" target="_blank" rel="noopener noreferrer">' +
                ICONS.link + esc(pr.urlLabel || 'Visit') + '</a>' : '',
+      about ? '<a class="card-link" href="' + esc(about) + '" target="_blank" rel="noopener noreferrer">' +
+               ICONS.link + 'About</a>' : '',
       repo ? '<a class="card-link" href="' + esc(repo) + '" target="_blank" rel="noopener noreferrer">' +
                ICONS.github + 'Source</a>' : ''
     ].join('');
