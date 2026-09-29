@@ -19,7 +19,7 @@
     },
     {
       "title": "Echoes of BIC",
-      "blurb": "A realistic horror job simulator made in Godot. You work a university help desk: check IDs and paperwork against a rulebook, watch how people answer your questions, and decide who to approve, reject or report to security. Missed threats don't fail you on the spot. They come back later.",
+      "blurb": "Work in progress. A realistic horror job simulator made in Godot. You work a university help desk: check IDs and paperwork against a rulebook, watch how people answer your questions, and decide who to approve, reject or report to security. Missed threats don't fail you on the spot. They come back later.",
       "year": "2026",
       "tags": [
         "Godot 4",
