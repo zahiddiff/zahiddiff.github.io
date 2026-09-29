@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "title": "AnimeAI",
+      "blurb": "A local AI anime studio that runs on a gaming laptop. It chains open-source image and video models into one pipeline for original shōnen-style characters, with a trained add-on per character so they look the same in every shot. Tuned for an 8 GB GPU: 18 s per keyframe, 46 min to train a new character, fully offline.",
+      "year": "2026",
+      "tags": [
+        "Python",
+        "ComfyUI",
+        "Stable Diffusion XL",
+        "LoRA training",
+        "Generative AI"
+      ],
+      "url": "https://github.com/zahiddiff/anime-ai/blob/main/docs/AnimeAI-Overview.pdf",
+      "urlLabel": "Read overview",
+      "repo": "https://github.com/zahiddiff/anime-ai",
+      "image": "assets/anime-ai.jpg",
+      "featured": true
+    },
+    {
       "title": "Echoes of BIC",
       "blurb": "A realistic horror job simulator made in Godot. You work a university help desk: check IDs and paperwork against a rulebook, watch how people answer your questions, and decide who to approve, reject or report to security. Missed threats don't fail you on the spot. They come back later.",
       "year": "2026",
